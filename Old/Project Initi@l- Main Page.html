@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+body{
+background-image: url(downloaded-1.jpg);
+background-size: cover;
+}	
+.card{
+
+height: 100px;
+width: 100px;
+margin: 40px;
+vertical-align: middle;
+align-self: center;
+float: left;
+text-align: center;
+padding-top: 200px;
+padding-left: 180px;
+box-sizing: border-box;
+display: block;
+bottom: 90px
+
+
+}
+
+
+.front{
+height: 200px;
+width:200px;
+	position:absolute;
+	-webkit-transform: perspective(400px) rotateY(0deg);
+	-o-transform: perspective(400px) rotateY(0deg);
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s linear 0.2s;
+	-o-transition: -webkit-transform 0.3s linear 0.2s;
+	padding-top: 90px;
+	box-sizing:border-box;
+	background-size: 150px;
+	background-image: url(https://lh3.googleusercontent.com/gRHrSlp6LbFVbaRm4rq6GNfQs9sYpWOlT1tOraNawk7jbQu87IuBwXKIDjU5Md4IFug=w300);
+	background-position: center;
+	border-radius:10px;
+
+}
+
+
+.back{
+height: 200px;
+width:200px;
+	box-sizing:border-box;
+	background: #009688;
+	position:absolute;
+	-webkit-transform: perspective(400px) rotateY(180deg);
+	-o-transform: perspective(400px) rotateY(180deg);
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s linear 0.2s;
+	-o-transition: -webkit-transform 0.3s linear 0.2s;
+	padding-top: 90px;
+	border-radius:20px;
+
+}
+
+
+
+.card:hover> .back{
+	-webkit-transform: perspective(300px) rotateY(0deg);
+	-o-transform: perspective(300px) rotateY(0deg);
+}
+
+
+.card:hover> .front{
+	-webkit-transform: perspective(300px) rotateY(180deg);
+	-o-transform: perspective(300px) rotateY(180deg);
+}
+
+.front2{
+height: 200px;
+width:200px;
+	background: #f22500;
+	position:absolute;
+	-webkit-transform: perspective(400px) rotateY(0deg);
+	-o-transform: perspective(400px) rotateY(0deg);
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s linear 0.2s;
+	-o-transition: -webkit-transform 0.3s linear 0.2s;
+	padding-right: 90px;
+	box-sizing:border-box;
+	background-size: 150px ;
+	background-image: url(http://lilysblackboard.org/wp-content/uploads/2017/05/time-logo-og.png);
+background-repeat: no-repeat;
+background-position: center;
+border-radius:10px;
+}
+
+
+.back2{
+height: 200px;
+width:200px;
+	box-sizing:border-box;
+	background:#c1c1c1;
+	position:absolute;
+	-webkit-transform: perspective(400px) rotateY(180deg);
+	-o-transform: perspective(400px) rotateY(180deg);
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s linear 0.2s;
+	-o-transition: -webkit-transform 0.3s linear 0.2s;
+	padding-top: 90px;
+	border-radius:10px;
+}
+
+
+
+
+.card:hover> .back2{
+	-webkit-transform: perspective(300px) rotateY(0deg);
+	-o-transform: perspective(300px) rotateY(0deg);
+}
+
+
+.card:hover> .front2{
+	-webkit-transform: perspective(300px) rotateY(180deg);
+	-o-transform: perspective(300px) rotateY(180deg);
+}
+
+
+
+.front3{
+height: 200px;
+width:200px;
+	background: #F44336;
+	position:absolute;
+	-webkit-transform: perspective(400px) rotateY(0deg);
+	-o-transform: perspective(400px) rotateY(0deg);
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s linear 0.2s;
+	-o-transition: -webkit-transform 0.3s linear 0.2s;
+	padding-top: 90px;
+	box-sizing:border-box;
+	background-image: url(https://static-secure.guim.co.uk/icons/social/og/gu-logo-fallback.png);
+	background-size: 200px 150px;
+	background-position: center;
+	border-radius:10px;
+}
+
+
+.back3{
+height: 200px;
+width:200px;
+	box-sizing:border-box;
+	background: #0097A7 ;
+	position:absolute;
+	-webkit-transform: perspective(400px) rotateY(180deg);
+	-o-transform: perspective(400px) rotateY(180deg);
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s linear 0.2s;
+	-o-transition: -webkit-transform 0.3s linear 0.2s;
+	padding-top: 90px;
+border-radius:10px;
+	
+}
+
+
+.card:hover> .back3{
+	-webkit-transform: perspective(300px) rotateY(0deg);
+	-o-transform: perspective(300px) rotateY(0deg);
+}
+
+
+.card:hover> .front3{
+	-webkit-transform: perspective(300px) rotateY(180deg);
+	-o-transform: perspective(300px) rotateY(180deg);
+}
+
+
+.front4{
+height: 200px;
+width:200px;
+	background: #F44336;
+	position:absolute;
+	-webkit-transform: perspective(400px) rotateY(0deg);
+	-o-transform: perspective(400px) rotateY(0deg);
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s linear 0.2s;
+	-o-transition: -webkit-transform 0.3s linear 0.2s;
+	padding-top: 90px;
+	box-sizing:border-box;
+	background-image: url(https://images-na.ssl-images-amazon.com/images/I/41cPT1ygkgL.png);
+	background-size: 200px 200px;
+	background-position: center; 
+	border-radius:10px;
+}
+
+
+.back4{
+height: 200px;
+width:200px;
+	box-sizing:border-box;
+	background: #F44336 ;
+	position:absolute;
+	-webkit-transform: perspective(400px) rotateY(180deg);
+	-o-transform: perspective(400px) rotateY(180deg);
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s linear 0.2s;
+	-o-transition: -webkit-transform 0.3s linear 0.2s;
+	padding-top: 90px;
+border-radius:10px;
+	
+}
+
+
+.card:hover> .back4{
+	-webkit-transform: perspective(300px) rotateY(0deg);
+	-o-transform: perspective(300px) rotateY(0deg);
+}
+
+
+.card:hover> .front4{
+	-webkit-transform: perspective(300px) rotateY(180deg);
+	-o-transform: perspective(300px) rotateY(180deg);
+}
+
+.audio{
+
+height: 100px;
+width: 100px;
+position: relative;
+top: 0px;
+box-sizing: border-box;
+padding-bottom: 30px;
+display: table;
+margin:0 auto;
+margin-bottom: -200px;
+
+
+}
+.clickme{
+
+	padding-top: 75px;
+	height: 20px
+	width:20px;
+
+}
+
+
+.audio2{
+
+	
+	margin:0 auto;
+	display: table;
+	height: 100px;
+width: 100px;
+align-items: center;
+align-self: center;
+
+}
+
+
+
+ul{
+
+	font-size: 28px;
+	
+opacity: 0.8;
+text-decoration:none;
+color:white;
+position: absolute;
+width: 100%;
+left:24%;
+
+
+
+
+}
+
+
+ul li{
+
+float:left;
+list-style: none;
+margin-left: 70px;
+display: flex;
+flex-direction: column;
+height: 20%;
+text-align: center;
+display: inline-block;
+    list-style-type: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+
+}
+
+ul li a:hover{
+
+text-decoration: underline;
+text-decoration-color: #008080;
+
+
+}
+
+a{
+	text-decoration: none;
+	color:#FFFFFF;
+-webkit-font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.hello{
+
+	height: 200px;
+width:200px;
+background-color: #FFFFFF;
+opacity: 1;
+position: absolute;
+z-index: 10;
+top: 0;
+padding-top:40px;
+box-sizing: border-box;
+
+
+
+}
+
+.hello > .options{
+
+height:40px;
+padding-left: 25px;
+left: 25px;
+text-align: center;
+margin:0, auto;
+}
+
+.hello > .date,.month,.year {
+
+	height: 30px;
+	
+}
+
+
+
+
+</style>
+
+<link rel="stylesheet"  href="animate.css">
+	
+</head>
+
+
+<body>
+
+
+<div class="card slideInUp animated">	
+
+<div class="front"></div>
+
+<div class="back" id="test">
+	
+
+
+ <audio controls class="audio" >
+  
+  <source src="Neon-Guts-Ft.-Pharrell-Williams.mp3" type="audio/mpeg">
+
+</audio> 
+
+
+ 
+ <audio controls class="audio2" align="center">
+  
+  <source src="05 The Way Life Goes.mp3" type="audio/mpeg">
+
+ 
+
+</audio> 
+
+<div class="clickme" height="30px" width="25px">
+ <a href="http://www.hindustantimes.com/"><img src="https://vignette3.wikia.nocookie.net/zombidle/images/a/ad/Vinque-uppercase-g-white.png/revision/latest?cb=20170319105208" height="25px" width="20px"> </a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+<div class="card slideInUp animated">	
+<div class="front2"></div>
+<div class="back2">
+
+<audio controls class="audio">
+  
+  <source src="Neon-Guts-Ft.-Pharrell-Williams.mp3" type="audio/mpeg">
+
+</audio> 
+
+
+ 
+ <audio controls class="audio2" align="center">
+  
+  <source src="05 The Way Life Goes.mp3" type="audio/mpeg">
+
+ 
+
+</audio> 
+
+<div class="clickme" height="30px" width="25px">
+ <a href="http://timesofindia.indiatimes.com/"><img src="https://vignette3.wikia.nocookie.net/zombidle/images/a/ad/Vinque-uppercase-g-white.png/revision/latest?cb=20170319105208" height="25px" width="20px"> </a>
+
+ </div>
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="card slideInUp animated">	
+
+
+
+<div class="front3"></div>
+
+<div class="back3">
+
+<audio controls class="audio">
+  
+  <source src="Neon-Guts-Ft.-Pharrell-Williams.mp3" type="audio/mpeg">
+
+</audio> 
+
+
+ 
+ <audio controls class="audio2" align="center">
+  
+  <source src="05 The Way Life Goes.mp3" type="audio/mpeg">
+
+ 
+
+</audio> 
+
+<div class="clickme" height="30px" width="25px">
+ <a href="https://www.theguardian.com"><img src="https://vignette3.wikia.nocookie.net/zombidle/images/a/ad/Vinque-uppercase-g-white.png/revision/latest?cb=20170319105208" height="25px" width="20px"> </a>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="card slideInUp animated">	
+
+<div class="front4"></div>
+<div class="back4">
+
+<audio controls class="audio">
+  
+  <source src="Neon-Guts-Ft.-Pharrell-Williams.mp3" type="audio/mpeg">
+
+</audio> 
+
+
+ 
+ <audio controls class="audio2" align="center">
+  
+  <source src="05 The Way Life Goes.mp3" type="audio/mpeg">
+
+ 
+
+</audio> 
+
+<div class="clickme" height="30px" width="25px">
+ <a href="https://www.washingtonpost.com/"><img src="https://vignette3.wikia.nocookie.net/zombidle/images/a/ad/Vinque-uppercase-g-white.png/revision/latest?cb=20170319105208" height="25px" width="20px"> </a>
+</div>
+
+</div>
+
+
+
+</div>
+
+<div class="pop fadeInDown animated">
+<ul>
+	
+<li><a href="Project Initial.html">Home</a></li>
+<li><a>Newspaper</a></li>
+<li><a href="https://www.infibeam.com/magazines/">Magazines</a></li>
+<li><a href="http://www.hindustantimes.com/">Articles</a></li>
+
+
+
+
+</ul>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
